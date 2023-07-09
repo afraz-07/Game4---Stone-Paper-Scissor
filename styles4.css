@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+
+body{
+    background-color: #2E4F4F;
+    color: #CBE4DE;
+    font-family: 'Play', sans-serif;
+}
+
+.name{
+    font-family: 'Henny Penny', cursive;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    text-shadow:  0 0 3px #0E8388, 0 0  5px #0E8388 ,  0 0  5px #0E8388 , 0 0  5px aqua;
+}
+
+#msg{
+    margin: 2rem 0 3rem 0;
+    text-align: center;
+    font-size: larger;
+}
+
+#image{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+}
+
+#computer img , #player img{
+    width: 85%;
+}
+
+
+#points{
+    margin: 3rem 0;
+    text-align: center;
+    font-size: larger;
+}
+
+#compoint{
+    font-size: xx-large;
+    margin-left: 2rem;
+    color: white;
+    text-shadow:  0 0 3px #0E8388, 0 0  5px #0E8388 ,  0 0  5px #0E8388 , 0 0  5px aqua;
+
+}
+
+#playpoint{
+    font-size: xx-large;
+    margin-right: 2rem;
+    color: white;
+    text-shadow:  0 0 3px #0E8388, 0 0  5px #0E8388 ,  0 0  5px #0E8388 , 0 0  5px aqua;
+
+}
+
+#slash{
+    font-size: xx-large;
+}
+
+#btnoption{
+    margin: 5rem 2rem 0 2rem;
+    display: flex;
+    justify-content:center;
+    gap: 20%;
+}
+
+#btnoption button{
+    background: none;
+    color: #CBE4DE;
+    border: 2px solid #CBE4DE;
+    padding: 10px 20px;
+    border-radius: 7px;
+    width: 150px;
+    font-size: medium;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s all linear ;
+    font-family: 'Play', sans-serif;
+}
+
+#btnoption button:hover{
+    background-color: #86C8BC;
+    border: 1px solid #86C8BC;
+    color: #2E4F4F;
+    font-weight: 600;
+}
+
+.shakecomputer{
+    animation: shake 0.8s linear;
+}
+
+.shakeplayer{
+    animation: playershake 0.8s linear;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(-30deg);
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+    75% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes playershake {
+    0% {
+        transform: rotate(30deg);
+    }
+    25% {
+        transform: rotate(-30deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    75% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width:750px){
+    #btnoption button{
+        padding: 10px;
+        width: 100px;
+        font-size: 0.9rem;
+    }
+    #btnoption{
+        margin:3rem 2rem 0 2rem;
+    }
+
+    #points{
+        margin: 2rem 0;
+}
+}
+
+@media (max-width:750px){
+    #btnoption button{
+        padding: 8px;
+        width: 90px;
+        font-size: 0.8rem;
+    }
+}
